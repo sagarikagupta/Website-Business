@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Studio — Premium Web Development Agency</title>
+  <meta name="description"
+    content="Nexus Studio crafts high-performance websites and digital experiences that convert visitors into customers. Custom development, SEO, and ongoing maintenance." />
+  <meta name="keywords" content="web development agency, custom websites, SEO, web design, e-commerce" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="Nexus Studio — Home">
+      <div class="nav-logo-icon">N</div>
+      Nexus<span style="color:var(--accent-light)">Studio</span>
+    </a>
+
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="#services" role="menuitem" data-section="services">Services</a></li>
+      <li role="none"><a href="#portfolio" role="menuitem" data-section="portfolio">Portfolio</a></li>
+      <li role="none"><a href="#process" role="menuitem" data-section="process">Process</a></li>
+      <li role="none"><a href="#generator" role="menuitem" data-section="generator">AI Generator</a></li>
+      <li role="none"><a href="#contact" role="menuitem" data-section="contact">Contact</a></li>
+      <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Get a Quote →</a></li>
+    </ul>
+
+    <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">✦ Digital Agency of the Year 2024</div>
+
+      <h1>
+        We Build Websites<br>
+        That <span class="gradient-text">Drive Revenue</span>
+      </h1>
+
+      <p class="hero-sub">
+        From sleek brand identities to high-converting e-commerce platforms —
+        we craft digital experiences that don't just look great, they perform.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Our Work →</a>
+        <a href="#contact" class="btn btn-secondary">Start a Project</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number" data-target="120" data-suffix="+">0+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number" data-target="7" data-suffix="yrs">0yrs</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number" data-target="40" data-suffix="M+">0M+</div>
+          <div class="stat-label">Revenue Generated</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services" aria-label="Services">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Services Built for Growth</h2>
+        <p class="section-sub">
+          Every service is tailored to one goal: turning your website into your most powerful business asset.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon">⚡</div>
+          <h3>Custom Web Development</h3>
+          <p>
+            Bespoke, hand-crafted websites built for speed, scalability, and conversion. We don't use templates — every
+            pixel is purpose-built for your brand.
+          </p>
+          <div class="service-tags">
+            <span class="tag">React / Next.js</span>
+            <span class="tag">Performance</span>
+            <span class="tag">CMS</span>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🔍</div>
+          <h3>Search Engine Optimisation</h3>
+          <p>
+            Dominate the search results that matter. Our technical SEO, content strategy, and link-building programmes
+            drive qualified organic traffic consistently.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Technical SEO</span>
+            <span class="tag">Content</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card reveal reveal-delay-3">
+          <div class="service-icon">🛡️</div>
+          <h3>Care &amp; Maintenance</h3>
+          <p>
+            Never worry about downtime, security patches, or plugin updates again. Our maintenance plans keep your site
+            fast, secure, and always evolving.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Security</span>
+            <span class="tag">Backups</span>
+            <span class="tag">24/7 Support</span>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🛒</div>
+          <h3>E-Commerce Solutions</h3>
+          <p>
+            From product discovery to checkout, we design e-commerce experiences optimised for conversion rate and
+            average order value growth.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Shopify</span>
+            <span class="tag">WooCommerce</span>
+            <span class="tag">CRO</span>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>
+            Strategy-led design that captivates users and drives action. We prototype, test, and iterate until every
+            interaction feels effortless.
+          </p>
+          <div class="service-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">User Testing</span>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card reveal reveal-delay-3">
+          <div class="service-icon">📈</div>
+          <h3>Growth &amp; Analytics</h3>
+          <p>
+            Data is our superpower. We set up robust analytics pipelines, run A/B tests, and use real data to
+            continuously improve your site's performance.
+          </p>
+          <div class="service-tags">
+            <span class="tag">GA4</span>
+            <span class="tag">A/B Testing</span>
+            <span class="tag">Heatmaps</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="portfolio" id="portfolio" aria-label="Portfolio">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">Case Studies</div>
+        <h2 class="section-title">Work That Speaks for Itself</h2>
+        <p class="section-sub">
+          A curated selection of projects where strategy, design, and engineering meet to create something exceptional.
+        </p>
+      </div>
+
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Work</button>
+        <button class="filter-btn" data-filter="ecommerce" id="filter-ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="saas" id="filter-saas">SaaS / Corporate</button>
+        <button class="filter-btn" data-filter="hospitality" id="filter-hospitality">Hospitality</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <article class="portfolio-card reveal reveal-delay-1" data-category="ecommerce">
+          <div class="portfolio-img">
+            <img
+              src="C:/Users/Sagarika Gupta/.gemini/antigravity/brain/c203d197-85a7-4f26-b6a1-69679d021f63/portfolio_ecommerce_1771621482783.png"
+              alt="MODA — Fashion E-Commerce Platform" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <div class="overlay-category">E-Commerce</div>
+                <div class="overlay-title">MODA — Luxury Fashion Store</div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-meta">
+              <span class="portfolio-category-badge">E-Commerce</span>
+              <span class="portfolio-year">2024</span>
+            </div>
+            <h3>MODA — Luxury Fashion Store</h3>
+            <p>Redesigned end-to-end shopping experience resulting in a 3× jump in conversion rate and a 58% increase in
+              average order value through smart product discovery and checkout optimisation.</p>
+            <div class="portfolio-stats">
+              <div class="pstat">
+                <div class="pstat-num">+312%</div>
+                <div class="pstat-label">Revenue</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">3.2×</div>
+                <div class="pstat-label">Conversion</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">98</div>
+                <div class="pstat-label">Perf. Score</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="saas">
+          <div class="portfolio-img">
+            <img
+              src="C:/Users/Sagarika Gupta/.gemini/antigravity/brain/c203d197-85a7-4f26-b6a1-69679d021f63/portfolio_saas_1771621497745.png"
+              alt="ClearView — SaaS Analytics Dashboard" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <div class="overlay-category">SaaS</div>
+                <div class="overlay-title">ClearView Analytics Platform</div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-meta">
+              <span class="portfolio-category-badge">SaaS</span>
+              <span class="portfolio-year">2024</span>
+            </div>
+            <h3>ClearView Analytics Platform</h3>
+            <p>Built a marketing site and interactive product demo for a B2B SaaS startup. The streamlined funnel
+              reduced CAC by 44% and increased trial signups by 180% within the first quarter post-launch.</p>
+            <div class="portfolio-stats">
+              <div class="pstat">
+                <div class="pstat-num">+180%</div>
+                <div class="pstat-label">Signups</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">−44%</div>
+                <div class="pstat-label">CAC</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">6wk</div>
+                <div class="pstat-label">Delivery</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="portfolio-card reveal reveal-delay-3" data-category="hospitality">
+          <div class="portfolio-img">
+            <img
+              src="C:/Users/Sagarika Gupta/.gemini/antigravity/brain/c203d197-85a7-4f26-b6a1-69679d021f63/portfolio_hospitality_1771621516865.png"
+              alt="Amara Restaurant — Hospitality Website" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <div class="overlay-category">Hospitality</div>
+                <div class="overlay-title">Amara — Fine Dining Experience</div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-meta">
+              <span class="portfolio-category-badge">Hospitality</span>
+              <span class="portfolio-year">2023</span>
+            </div>
+            <h3>Amara — Fine Dining Experience</h3>
+            <p>Complete brand refresh and website for a Michelin-starred restaurant. Integrated online reservations, a
+              curated menu experience, and gift voucher sales, driving a 95% booking-rate improvement.</p>
+            <div class="portfolio-stats">
+              <div class="pstat">
+                <div class="pstat-num">+95%</div>
+                <div class="pstat-label">Bookings</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">4.9★</div>
+                <div class="pstat-label">Rating</div>
+              </div>
+              <div class="pstat">
+                <div class="pstat-num">3wk</div>
+                <div class="pstat-label">Delivery</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process" aria-label="Our Process">
+    <div class="container">
+      <div class="text-center reveal">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title">A Clear Path to Launch</h2>
+        <p class="section-sub">
+          No guesswork, no delays. Our battle-tested process keeps every project on time and on budget.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-number">01</div>
+          <h3>Discovery &amp; Strategy</h3>
+          <p>We dive deep into your business goals, target audience, and competitive landscape to define a winning
+            digital strategy before a single line of code is written.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-number">02</div>
+          <h3>Design &amp; Prototype</h3>
+          <p>Our designers create high-fidelity Figma prototypes for your approval. You see exactly what you're getting
+            — no surprises at the final handoff.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-number">03</div>
+          <h3>Build &amp; Optimise</h3>
+          <p>Our engineers build a blazing-fast, accessible, and SEO-ready website. Every release goes through QA,
+            cross-browser testing, and performance audits.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-4">
+          <div class="step-number">04</div>
+          <h3>Launch &amp; Grow</h3>
+          <p>We handle the go-live, train your team, and stay on-hand post-launch. Growth doesn't stop at deployment —
+            it's just getting started.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAGIC WEBSITE GENERATOR ===================== -->
+  <section class="generator" id="generator" aria-label="Magic Website Generator">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="gen-header reveal">
+        <div class="section-label">✨ Try It Free</div>
+        <h2 class="section-title">Magic Website <em>Generator</em></h2>
+        <p class="section-sub" style="margin:0 auto;">
+          Describe your business in plain English. Our AI builds a live, responsive website preview in seconds — then
+          we'll make it perfect.
+        </p>
+      </div>
+
+      <!-- Search bar -->
+      <div class="gen-bar-wrap reveal">
+        <div class="gen-bar">
+          <span class="gen-bar-icon">🏢</span>
+          <input type="text" id="gen-desc"
+            placeholder="e.g. A craft coffee shop in Austin called Bloom that specialises in single-origin espresso…"
+            autocomplete="off" maxlength="400" aria-label="Business description" />
+          <button id="gen-btn" aria-label="Generate website">
+            <span>✨</span> Generate
+          </button>
+        </div>
+      </div>
+
+      <!-- Example prompts -->
+      <div class="gen-examples reveal">
+        <span style="font-size:0.78rem;color:var(--text-muted);margin-right:4px;">Try:</span>
+        <button class="gen-example"
+          data-prompt="A luxury pet spa in New York called Pawsome — grooming, daycare, and wellness for dogs">🐾 Pet
+          Spa</button>
+        <button class="gen-example"
+          data-prompt="A freelance photographer named Lena Harlow specialising in editorial and wedding photography">📷
+          Photographer</button>
+        <button class="gen-example"
+          data-prompt="An AI SaaS startup called Nexora that automates invoice processing for accounting firms">🤖 SaaS
+          Startup</button>
+        <button class="gen-example"
+          data-prompt="A family-owned Italian restaurant called La Stella in Chicago with a wood-fired oven">🍕
+          Restaurant</button>
+      </div>
+
+      <!-- Status -->
+      <p class="gen-status" id="gen-status" role="alert"></p>
+
+      <!-- API key (collapsible) -->
+      <div class="gen-key-wrap reveal">
+        <button id="gen-key-toggle">▼ Set Gemini API Key</button>
+        <div id="gen-key-row" role="group" aria-label="API key settings">
+          <label for="gen-api-key">🔑 Key:</label>
+          <input type="password" id="gen-api-key" placeholder="AIza…" autocomplete="off" spellcheck="false" />
+          <button id="gen-key-eye" aria-label="Toggle key visibility" title="Show / hide key">👁️</button>
+          <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" class="gen-key-link">Get free
+            key →</a>
+        </div>
+      </div>
+
+      <!-- Live preview -->
+      <div id="gen-preview-wrap">
+        <!-- Browser chrome bar -->
+        <div class="gen-browser-chrome">
+          <div class="gen-chrome-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="gen-chrome-bar" id="gen-chrome-url">ai-preview.nexusstudio.dev</div>
+          <div class="gen-chrome-badge">AI Live Preview</div>
+        </div>
+        <!-- Shimmer skeleton -->
+        <div class="gen-shimmer"></div>
+        <!-- Actual iframe -->
+        <iframe id="gen-iframe" title="AI Generated Website Preview" sandbox="allow-scripts allow-same-origin"
+          loading="lazy"></iframe>
+      </div>
+
+      <!-- Professional Polish CTA -->
+      <div id="gen-polish-card" role="complementary" aria-label="Professional Polish offer">
+        <div class="gen-polish-sparkle">🚀</div>
+        <div class="gen-polish-text">
+          <h3>Love the concept? Let's make it real.</h3>
+          <p>Our team will turn this AI sketch into a blazing-fast, fully custom website — pixel-perfect, SEO-optimised,
+            and built to convert.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="flex-shrink:0;">Professional Polish →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" aria-label="Client Testimonials">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 48px;">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">Trusted by Great Brands</h2>
+      </div>
+    </div>
+
+    <div class="testimonial-track-wrap">
+      <div class="testimonial-track">
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Nexus Studio transformed our online presence completely. Revenue from our site doubled in three
+            months — their team is simply exceptional."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <div class="author-name">James Morrison</div>
+              <div class="author-role">CEO, MODA Apparel</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"The new site launched on time, under budget, and immediately outperformed every competitor in our
+            niche. I can't recommend them enough."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <div class="author-name">Sophia Reyes</div>
+              <div class="author-role">Founder, ClearView Analytics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Our bookings went through the roof after the redesign. Guests constantly compliment how beautiful
+            and easy to use our website is."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <div class="author-name">Antoine Laurent</div>
+              <div class="author-role">Owner, Amara Restaurant</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Their SEO work alone has generated over $200k in organic revenue. And their maintenance team
+            means I sleep soundly knowing nothing will break."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">PK</div>
+            <div>
+              <div class="author-name">Priya Kapoor</div>
+              <div class="author-role">Director, Kapoor &amp; Co.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Working with Nexus was the best investment we've made. The process was smooth, the team
+            communicative, and the results speak for themselves."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">TC</div>
+            <div>
+              <div class="author-name">Thomas Chen</div>
+              <div class="author-role">CMO, Vertex SaaS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Nexus Studio transformed our online presence completely. Revenue from our site doubled in three
+            months — their team is simply exceptional."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <div class="author-name">James Morrison</div>
+              <div class="author-role">CEO, MODA Apparel</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"The new site launched on time, under budget, and immediately outperformed every competitor in our
+            niche. I can't recommend them enough."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <div class="author-name">Sophia Reyes</div>
+              <div class="author-role">Founder, ClearView Analytics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Our bookings went through the roof after the redesign. Guests constantly compliment how beautiful
+            and easy to use our website is."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <div class="author-name">Antoine Laurent</div>
+              <div class="author-role">Owner, Amara Restaurant</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Their SEO work alone has generated over $200k in organic revenue. And their maintenance team
+            means I sleep soundly knowing nothing will break."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">PK</div>
+            <div>
+              <div class="author-name">Priya Kapoor</div>
+              <div class="author-role">Director, Kapoor &amp; Co.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Working with Nexus was the best investment we've made. The process was smooth, the team
+            communicative, and the results speak for themselves."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">TC</div>
+            <div>
+              <div class="author-name">Thomas Chen</div>
+              <div class="author-role">CMO, Vertex SaaS</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="reveal">
+          <div class="section-label" style="justify-content: center;">Let's Talk</div>
+          <h2 class="section-title">Ready to Build Something<br><span
+              style="color:var(--accent-light)">Remarkable?</span></h2>
+          <p class="section-sub" style="margin: 0 auto;">
+            Tell us about your project and we'll get back to you within one business day with a tailored proposal.
+          </p>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="Alex Johnson" autocomplete="name" />
+              <span class="form-error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="alex@company.com" autocomplete="email" />
+              <span class="form-error-msg"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fservice">Service Needed</label>
+            <select id="fservice" name="service">
+              <option value="">Select a service…</option>
+              <option value="custom">Custom Web Development</option>
+              <option value="seo">SEO &amp; Content</option>
+              <option value="ecommerce">E-Commerce</option>
+              <option value="maintenance">Care &amp; Maintenance</option>
+              <option value="design">UI/UX Design</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="fmessage">Tell Us About Your Project</label>
+            <textarea id="fmessage" name="message"
+              placeholder="What are you trying to achieve? What does success look like?"></textarea>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" style="font-size:1.05rem;">
+          <div class="nav-logo-icon">N</div>
+          Nexus<span style="color:var(--accent-light)">Studio</span>
+        </a>
+        <p>Crafting digital experiences that convert visitors into loyal customers. Based in New York, serving clients
+          globally.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="Dribbble">🏀</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Custom Development</a></li>
+          <li><a href="#services">SEO &amp; Content</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">Maintenance Plans</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@nexusstudio.dev">hello@nexusstudio.dev</a></li>
+          <li><a href="tel:+12125551234">+1 (212) 555-1234</a></li>
+          <li><a href="#">Schedule a Call</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 NexusStudio. All rights reserved.</span>
+      <span>Built with ❤️ in New York</span>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="generator.js" defer></script>
+</body>
+
+</html>
