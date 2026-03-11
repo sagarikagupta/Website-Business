@@ -52,6 +52,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -628,6 +632,11 @@ section {
   box-shadow: var(--shadow-card), var(--shadow-accent);
 }
 
+.portfolio-card:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 4px;
+}
+
 .portfolio-img {
   position: relative;
   overflow: hidden;
@@ -751,6 +760,121 @@ section {
 }
 
 /* ===========================
+   SAMPLE SITE PREVIEW MODAL
+   =========================== */
+.site-preview-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.site-preview-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.site-preview-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 10, 18, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+}
+
+.site-preview-panel {
+  width: min(1180px, 100%);
+  height: min(88vh, 900px);
+  background: #0b0f18;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.site-preview-eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--accent-light);
+  margin-bottom: 4px;
+}
+
+.site-preview-header h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.2px;
+}
+
+.site-preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-preview-btn,
+.site-preview-close {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.site-preview-btn {
+  font-family: var(--font);
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+}
+
+.site-preview-close {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.site-preview-btn:hover,
+.site-preview-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-accent);
+}
+
+.site-preview-frame-wrap {
+  flex: 1;
+  min-height: 0;
+  background: #fff;
+}
+
+#sitePreviewFrame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #fff;
+}
+
+/* ===========================
    PROCESS
    =========================== */
 .process {
@@ -837,7 +961,7 @@ section {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: scrollTrack 28s linear infinite;
+  animation: scrollTrack 48s linear infinite;
 }
 
 @keyframes scrollTrack {
@@ -855,12 +979,15 @@ section {
 }
 
 .testimonial-item {
-  min-width: 340px;
+  width: 280px;
+  min-height: 300px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px 28px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-stars {
@@ -875,6 +1002,7 @@ section {
   line-height: 1.75;
   margin-bottom: 20px;
   font-style: italic;
+  flex: 1;
 }
 
 .testimonial-author {
@@ -1194,6 +1322,33 @@ footer {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
+
+  .site-preview-backdrop {
+    padding: 16px;
+  }
+
+  .site-preview-panel {
+    height: min(84vh, 760px);
+    border-radius: var(--radius-lg);
+  }
+
+  .site-preview-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-preview-actions {
+    justify-content: space-between;
+  }
+
+  .site-preview-btn {
+    flex: 1;
+  }
+
+  .testimonial-item {
+    width: 250px;
+    min-height: 320px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1209,6 +1364,18 @@ footer {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .site-preview-backdrop {
+    padding: 10px;
+  }
+
+  .site-preview-actions {
+    gap: 8px;
+  }
+
+  .site-preview-close {
+    flex-shrink: 0;
   }
 
 }

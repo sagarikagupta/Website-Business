@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terra & Clay – Artisanal Ceramic Homeware</title>
+    <meta name="description"
+        content="Handcrafted ceramic homeware made with love. Discover unique bowls, vases, mugs, and platters, each thoughtfully shaped by artisan hands." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-left" id="navLinks">
+                <li><a href="#collection">Shop</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#newsletter">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-logo">Terra <span class="accent">&</span> Clay</a>
+            <div class="nav-right">
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+                <button class="icon-btn cart-toggle" id="cartToggle" aria-label="Open cart">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="hero">
+        <div class="hero-image-wrap">
+            <img src="images/hero.png" alt="Artisanal ceramic collection" class="hero-image" />
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag">Handcrafted with Heart</p>
+            <h1>Beautiful Things<br />for <span class="accent">Everyday</span> Living</h1>
+            <p class="hero-desc">Each piece is hand-thrown, glazed, and fired in our studio — made to be used, loved,
+                and passed on.</p>
+            <a href="#collection" class="btn-primary">Shop the Collection</a>
+        </div>
+    </header>
+
+    <!-- ===================== FEATURED COLLECTION ===================== -->
+    <section class="collection" id="collection">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-tag">The Collection</p>
+                <h2>Made by Hand, <span class="accent">Made to Last</span></h2>
+            </div>
+            <div class="product-grid">
+                <!-- Products are rendered via JS from the product data below -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== BRAND STORY ===================== -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image reveal">
+                    <img src="images/brand-story.png" alt="Artisan shaping clay" />
+                </div>
+                <div class="story-content reveal">
+                    <p class="section-tag">Our Story</p>
+                    <h2>Where Earth Meets <span class="accent">Art</span></h2>
+                    <p>Terra & Clay was born from a simple belief: that the objects we use every day should be as
+                        beautiful as they are functional. Working from our sun-filled studio in the countryside, we
+                        shape each piece by hand — from the first touch of raw clay to the final glaze firing.</p>
+                    <p>We source our materials locally, fire with natural gas, and package in recycled paper. Every
+                        imperfection tells a story, and every piece is one of a kind.</p>
+                    <div class="story-stats">
+                        <div class="stat">
+                            <span class="stat-number">2,400+</span>
+                            <span class="stat-text">Pieces Crafted</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-text">Handmade</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12</span>
+                            <span class="stat-text">Glaze Colors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-box reveal">
+                <div class="newsletter-content">
+                    <h2>Stay in the <span class="accent">Loop</span></h2>
+                    <p>New collections, studio stories, and an exclusive 10% off your first order.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-wrap">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </div>
+                    <p class="form-note">No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">Terra <span class="accent">&</span> Clay</a>
+                    <p>Handcrafted ceramics for the modern home. Every piece tells a story.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <a href="#collection">All Products</a>
+                    <a href="#">Bowls & Plates</a>
+                    <a href="#">Vases</a>
+                    <a href="#">Mugs</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Care Guide</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 12a4 4 0 018 0c0 4-3 6-3 6" />
+                                <line x1="12" y1="12" x2="11" y2="22" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Tiktok">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Terra & Clay. All rights reserved.</p>
+                <div class="payment-icons">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>Amex</span>
+                    <span>PayPal</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== PRODUCT MODAL ===================== -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImg" />
+                </div>
+                <div class="modal-details">
+                    <p class="modal-tag" id="modalTag"></p>
+                    <h2 id="modalName"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-options">
+                        <div class="option-group">
+                            <label>Color</label>
+                            <div class="color-swatches" id="modalColors"></div>
+                        </div>
+                        <div class="option-group">
+                            <label>Quantity</label>
+                            <div class="qty-stepper">
+                                <button class="qty-btn" id="qtyMinus">−</button>
+                                <span class="qty-value" id="qtyValue">1</span>
+                                <button class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary full-width modal-add-btn" id="modalAddBtn">Add to Cart</button>
+                    <p class="modal-shipping">Free shipping on orders over $120</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="icon-btn" id="cartClose" aria-label="Close cart">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                <p>Your cart is empty</p>
+                <a href="#collection" class="btn-outline" id="cartShopLink">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">$0.00</strong>
+            </div>
+            <p class="cart-note">Shipping & taxes calculated at checkout</p>
+            <button class="btn-primary full-width">Checkout</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -245,7 +245,7 @@ footer{background:var(--brown);color:rgba(250,246,238,.45);text-align:center;pad
 <div class="mi"><span style="font-size:1.6rem">🍮</span><h3>Vanilla Crème Brûlée</h3><p>Madagascar vanilla, caramelised crust, fresh strawberries</p><div class="price">$14</div></div>
 </div></div></section>
 <div class="cta-bar"><h2>Join Us Tonight</h2><p>Walk-ins welcome, but reservations are recommended on weekends.</p><a href="#" class="b-cream">Reserve Your Table →</a></div>
-<footer>© 2025 ${n} · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -316,7 +316,7 @@ footer{text-align:center;padding:36px 24px;border-top:1px solid var(--bd);font-s
 </div>
 <div class="cta"><h2>Ready to move faster?</h2><p>10,000+ teams already use ${n}. Start your 14-day free trial — no credit card needed.</p><a href="#" class="bw">Start free trial →</a></div>
 </div></section>
-<footer>© 2025 ${n} · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -380,7 +380,7 @@ footer{padding:20px 40px;border-top:2px solid #0D0D0D;display:flex;justify-conte
 <div class="wb"><span class="wn">04</span><h3>Film</h3><p>Medium-format 35mm. Pure analogue — no digital grain filters.</p></div>
 </div>
 <div class="cs"><div><h2>Have a project<br>in <span>mind?</span></h2><p style="color:rgba(242,240,236,.5);margin-top:8px;font-size:.84rem">I take on 4–6 commissions per quarter.</p></div><a href="mailto:hello@studio.com" class="bw">Get in Touch →</a></div>
-<footer><span>© 2025 ${n}</span><span>Built with ❤️ by NexusStudio</span></footer>
+<footer><span>© 2025 ${n}</span><span>Built with ❤️ by Vezalo</span></footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -458,7 +458,7 @@ footer{padding:28px 48px;border-top:1px solid #1A1A1A;display:flex;justify-conte
 <div class="pc"><span style="font-size:1.8rem">🏃</span><h3>Endurance</h3><p>Running-based cardio programming built around your personal pace and race goals.</p><div class="pd"><span>50 min</span><span>All levels</span><span>5×/wk</span></div></div>
 </div></div></section>
 <div class="cbar"><div><h2>Ready to<br>Start?</h2><p style="margin-top:8px">First 2 weeks are completely free. No commitment. Just show up and put in the work.</p><a href="#" class="bbk">Start Free — No Card →</a></div></div>
-<footer><span>© 2025 ${n}</span><span>Built with ❤️ by NexusStudio</span></footer>
+<footer><span>© 2025 ${n}</span><span>Built with ❤️ by Vezalo</span></footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -537,7 +537,7 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid var(--bd);font-s
 </div>
 <div class="ctas"><h2>Ready to grow?</h2><p>Book a free 30-minute call. We'll tell you honestly if we're the right fit.</p><a href="#" class="bw">Book Free Consultation →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -613,7 +613,7 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid var(--bd);font-s
 </div>
 <div class="cta-s"><h2>Ready to Find Your Home?</h2><p>Let one of our senior agents guide you through every step of the process — from discovery to keys in hand.</p><a href="#" class="b-gold">Schedule a Free Consultation →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -687,7 +687,7 @@ footer{text-align:center;padding:32px 24px;border-top:1px solid var(--bd);font-s
 </div>
 <div class="booking"><h2>Ready for a New Look?</h2><p>Book your appointment online in under 60 seconds. We're open 7 days a week.</p><a href="#" class="b-cream">Book Your Appointment →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -766,7 +766,7 @@ footer{background:var(--navy);color:rgba(248,245,239,.35);text-align:center;padd
 </div>
 <div class="cta-s"><h2>Speak with an Attorney Today</h2><p>Initial consultations are completely confidential and carry no obligation. Let's discuss your situation.</p><a href="#" class="b1">Request a Free Consultation →</a></div>
 </div></section>
-<footer>© 2025 ${n} · Attorney Advertising · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Attorney Advertising · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -851,7 +851,7 @@ footer{text-align:center;padding:36px 24px;border-top:1px solid var(--bd);font-s
 </div>
 <div class="cta-s"><h2>Ready to start learning?</h2><p>Join over 3,000 students who have already transformed their careers with our courses.</p><a href="#" class="bw">Get Started Free →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -940,7 +940,7 @@ footer{background:var(--dark);text-align:center;padding:32px 24px;font-size:.78r
 </div>
 <div class="cta-s" style="border-radius:20px;margin-top:60px"><h2>Ready for your next adventure?</h2><p>Every itinerary is fully bespoke — built around you, not a template. Talk to a travel specialist today.</p><a href="#" class="b-coral">Plan My Trip →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>
 document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
 window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('solid',window.scrollY>60)});
@@ -1027,7 +1027,7 @@ footer{text-align:center;padding:32px 24px;border-top:2px solid var(--bd);font-s
 </div>
 <div class="cta-s"><h2>Ready to book? 🐾</h2><p>Same-day appointments often available. Call us or book online in 60 seconds.</p><a href="#" class="b-w">Book Online Now →</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -1113,7 +1113,7 @@ footer{background:var(--white);text-align:center;padding:32px 24px;border-top:1p
 </tbody></table></div>
 <div class="cta-row"><h2>Your financial future starts with one conversation.</h2><a href="#" class="b-w">Schedule Free Consultation →</a></div>
 </div></section>
-<footer>© 2025 ${n} · Regulated Financial Services · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Regulated Financial Services · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }
@@ -1200,7 +1200,7 @@ footer{background:var(--ivory);text-align:center;padding:32px 24px;border-top:1p
 </div>
 <div class="cta-banner"><h2>Let's plan something beautiful</h2><p>We take on a limited number of events each season to give every client the attention they deserve.</p><a href="#" class="b-gold">Enquire About Availability</a></div>
 </div></section>
-<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · All rights reserved · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`;
   }

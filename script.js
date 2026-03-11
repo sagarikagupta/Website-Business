@@ -88,6 +88,14 @@ for (let i = 0; i < 22; i++) createParticle();
    =========================== */
 const filterBtns = document.querySelectorAll('.filter-btn');
 const portfolioCards = document.querySelectorAll('.portfolio-card');
+const sitePreviewModal = document.getElementById('sitePreviewModal');
+const sitePreviewBackdrop = document.getElementById('sitePreviewBackdrop');
+const sitePreviewPanel = sitePreviewModal?.querySelector('.site-preview-panel');
+const sitePreviewFrame = document.getElementById('sitePreviewFrame');
+const sitePreviewTitle = document.getElementById('sitePreviewTitle');
+const sitePreviewClose = document.getElementById('sitePreviewClose');
+const sitePreviewBack = document.getElementById('sitePreviewBack');
+let lastPreviewTrigger = null;
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -109,6 +117,57 @@ filterBtns.forEach(btn => {
       }
     });
   });
+});
+
+function openSitePreview(card) {
+  if (!sitePreviewModal || !sitePreviewFrame || !sitePreviewTitle) return;
+
+  lastPreviewTrigger = card;
+  sitePreviewFrame.src = card.dataset.previewUrl || '';
+  sitePreviewTitle.textContent = card.dataset.previewTitle || 'Website Preview';
+  sitePreviewModal.classList.add('open');
+  sitePreviewModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closeSitePreview() {
+  if (!sitePreviewModal || !sitePreviewFrame) return;
+
+  sitePreviewModal.classList.remove('open');
+  sitePreviewModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  sitePreviewFrame.src = 'about:blank';
+
+  if (lastPreviewTrigger) {
+    lastPreviewTrigger.focus();
+  }
+}
+
+portfolioCards.forEach(card => {
+  const openCardPreview = () => openSitePreview(card);
+
+  card.addEventListener('click', openCardPreview);
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openCardPreview();
+    }
+  });
+});
+
+sitePreviewClose?.addEventListener('click', closeSitePreview);
+sitePreviewBack?.addEventListener('click', closeSitePreview);
+sitePreviewPanel?.addEventListener('click', event => event.stopPropagation());
+sitePreviewBackdrop?.addEventListener('click', (event) => {
+  if (event.target === sitePreviewBackdrop) {
+    closeSitePreview();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && sitePreviewModal?.classList.contains('open')) {
+    closeSitePreview();
+  }
 });
 
 /* ===========================

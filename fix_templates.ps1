@@ -60,7 +60,7 @@ footer{background:var(--brown);color:rgba(250,246,238,.45);text-align:center;pad
 <div class="mi"><span style="font-size:1.6rem">🍮</span><h3>Vanilla Crème Brûlée</h3><p>Madagascar vanilla, caramelised crust, fresh strawberries</p><div class="price">$14</div></div>
 </div></div></section>
 <div class="cta-bar"><h2>Join Us Tonight</h2><p>Walk-ins welcome, but reservations are recommended on weekends.</p><a href="#" class="b-cream">Reserve Your Table →</a></div>
-<footer>© 2025 ${n} · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`
 '@
@@ -149,7 +149,7 @@ footer{background:var(--dk);color:rgba(250,246,238,.3);text-align:center;padding
 </div>
 </div></section>
 <div class="cta-bar"><h2>Join Us for Dinner</h2><p>Walk-ins welcome at the bar. Reservations strongly recommended for tables, especially on weekends.</p><a href="#" class="b-cream">Reserve Your Table →</a></div>
-<footer>© 2025 ${n} · Built with ❤️ by NexusStudio</footer>
+<footer>© 2025 ${n} · Built with ❤️ by Vezalo</footer>
 <script>document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));</script>
 </body></html>`
 '@
