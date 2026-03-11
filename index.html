@@ -26,7 +26,7 @@
       <li role="none"><a href="#services" role="menuitem" data-section="services">Services</a></li>
       <li role="none"><a href="#portfolio" role="menuitem" data-section="portfolio">Portfolio</a></li>
       <li role="none"><a href="#process" role="menuitem" data-section="process">Process</a></li>
-      <li role="none"><a href="#generator" role="menuitem" data-section="generator">AI Generator</a></li>
+
       <li role="none"><a href="#contact" role="menuitem" data-section="contact">Contact</a></li>
       <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Get a Quote →</a></li>
     </ul>
@@ -337,95 +337,7 @@
     </div>
   </section>
 
-  <!-- ===================== MAGIC WEBSITE GENERATOR ===================== -->
-  <section class="generator" id="generator" aria-label="Magic Website Generator">
-    <div class="container">
 
-      <!-- Header -->
-      <div class="gen-header reveal">
-        <div class="section-label">✨ Try It Free</div>
-        <h2 class="section-title">Magic Website <em>Generator</em></h2>
-        <p class="section-sub" style="margin:0 auto;">
-          Describe your business in plain English. Our AI builds a live, responsive website preview in seconds — then
-          we'll make it perfect.
-        </p>
-      </div>
-
-      <!-- Search bar -->
-      <div class="gen-bar-wrap reveal">
-        <div class="gen-bar">
-          <span class="gen-bar-icon">🏢</span>
-          <input type="text" id="gen-desc"
-            placeholder="e.g. A craft coffee shop in Austin called Bloom that specialises in single-origin espresso…"
-            autocomplete="off" maxlength="400" aria-label="Business description" />
-          <button id="gen-btn" aria-label="Generate website">
-            <span>✨</span> Generate
-          </button>
-        </div>
-      </div>
-
-      <!-- Example prompts -->
-      <div class="gen-examples reveal">
-        <span style="font-size:0.78rem;color:var(--text-muted);margin-right:4px;">Try:</span>
-        <button class="gen-example"
-          data-prompt="A luxury pet spa in New York called Pawsome — grooming, daycare, and wellness for dogs">🐾 Pet
-          Spa</button>
-        <button class="gen-example"
-          data-prompt="A freelance photographer named Lena Harlow specialising in editorial and wedding photography">📷
-          Photographer</button>
-        <button class="gen-example"
-          data-prompt="An AI SaaS startup called Nexora that automates invoice processing for accounting firms">🤖 SaaS
-          Startup</button>
-        <button class="gen-example"
-          data-prompt="A family-owned Italian restaurant called La Stella in Chicago with a wood-fired oven">🍕
-          Restaurant</button>
-      </div>
-
-      <!-- Status -->
-      <p class="gen-status" id="gen-status" role="alert"></p>
-
-      <!-- API key (collapsible) -->
-      <div class="gen-key-wrap reveal">
-        <button id="gen-key-toggle">▼ Set Gemini API Key</button>
-        <div id="gen-key-row" role="group" aria-label="API key settings">
-          <label for="gen-api-key">🔑 Key:</label>
-          <input type="password" id="gen-api-key" placeholder="AIza…" autocomplete="off" spellcheck="false" />
-          <button id="gen-key-eye" aria-label="Toggle key visibility" title="Show / hide key">👁️</button>
-          <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" class="gen-key-link">Get free
-            key →</a>
-        </div>
-      </div>
-
-      <!-- Live preview -->
-      <div id="gen-preview-wrap">
-        <!-- Browser chrome bar -->
-        <div class="gen-browser-chrome">
-          <div class="gen-chrome-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="gen-chrome-bar" id="gen-chrome-url">ai-preview.vezalo.dev</div>
-          <div class="gen-chrome-badge">AI Live Preview</div>
-        </div>
-        <!-- Shimmer skeleton -->
-        <div class="gen-shimmer"></div>
-        <!-- Actual iframe -->
-        <iframe id="gen-iframe" title="AI Generated Website Preview" sandbox="allow-scripts allow-same-origin"
-          loading="lazy"></iframe>
-      </div>
-
-      <!-- Professional Polish CTA -->
-      <div id="gen-polish-card" role="complementary" aria-label="Professional Polish offer">
-        <div class="gen-polish-sparkle">🚀</div>
-        <div class="gen-polish-text">
-          <h3>Love the concept? Let's make it real.</h3>
-          <p>Our team will turn this AI sketch into a blazing-fast, fully custom website — pixel-perfect, SEO-optimised,
-            and built to convert.</p>
-        </div>
-        <a href="#contact" class="btn btn-primary" style="flex-shrink:0;">Professional Polish →</a>
-      </div>
-
-    </div>
-  </section>
 
   <!-- ===================== TESTIMONIALS ===================== -->
   <section class="testimonials" aria-label="Client Testimonials">
@@ -587,7 +499,7 @@
           </p>
         </div>
 
-        <form class="contact-form reveal" id="contactForm" novalidate>
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mojkdajd" method="POST" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="fname">Your Name</label>
@@ -712,7 +624,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js" defer></script>
-  <script src="generator.js" defer></script>
+
 </body>
 
 </html>

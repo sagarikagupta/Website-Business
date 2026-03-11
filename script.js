@@ -248,19 +248,49 @@ form.addEventListener('submit', (e) => {
   if (!valid) return;
 
   const btn = form.querySelector('button[type="submit"]');
+  const originalBtnText = btn.textContent;
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  // Simulate async submit
-  setTimeout(() => {
-    form.reset();
-    btn.textContent = '✓ Message Sent!';
-    showToast('🎉 Thanks! We\'ll be in touch within 24 hours.');
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        btn.textContent = '✓ Message Sent!';
+        showToast('🎉 Thanks! We\'ll be in touch within 24 hours.');
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            showToast(data['errors'].map(error => error['message']).join(', '), '#FF4D6D');
+          } else {
+            showToast('Oops! There was a problem submitting your form', '#FF4D6D');
+          }
+        });
+        btn.textContent = originalBtnText;
+        btn.disabled = false;
+      }
+    })
+    .catch(error => {
+      showToast('Oops! There was a problem submitting your form', '#FF4D6D');
+      btn.textContent = originalBtnText;
       btn.disabled = false;
-    }, 3000);
-  }, 1400);
+    })
+    .finally(() => {
+      setTimeout(() => {
+        if (btn.textContent === '✓ Message Sent!') {
+          btn.textContent = originalBtnText;
+          btn.disabled = false;
+        }
+      }, 4000);
+    });
 });
 
 // Live clear errors on input
