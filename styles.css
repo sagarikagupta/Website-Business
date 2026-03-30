@@ -144,17 +144,11 @@ section {
   letter-spacing: -0.3px;
 }
 
-.nav-logo-icon {
-  width: 34px;
-  height: 34px;
-  background: var(--accent);
+.nav-logo-img {
+  height: 40px;
+  width: auto;
   border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 900;
-  box-shadow: 0 0 20px var(--accent-glow);
+  display: block;
 }
 
 .nav-links {
